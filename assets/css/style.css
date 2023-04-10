@@ -1,12 +1,14 @@
+/*Reset Css*/
 * {
     margin: 0;
     padding: 0; 
 }
-
+/*Basic Fonts resize*/
 html {
     font-size: 62.5%;
 }
 
+/*Fonts Defining*/
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
