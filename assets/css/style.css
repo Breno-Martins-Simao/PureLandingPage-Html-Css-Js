@@ -43,3 +43,9 @@ h5 {
 h6 { 
     font-size: 3.5rem;
 }
+
+.main-background {
+    background-image: url(../img/main-background.svg);
+    background-size: cover;
+    background-position: center center;
+}
