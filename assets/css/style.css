@@ -1,3 +1,9 @@
+/*Css Variables*/
+:root {
+    --primary-color: #0A1128;
+    --white: #ffffff;
+}
+
 /*Reset Css*/
 * {
     margin: 0;
@@ -11,7 +17,8 @@ html {
 /*Fonts Defining*/
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,13 +51,23 @@ h6 {
     font-size: 3.5rem;
 }
 
+/*Backgrounds*/
 .main-background {
     background-image: url(../img/main-background.svg);
     background-size: cover;
     background-position: center center;
+    color: var(--white);
+}
+
+.white-background {
+    background: var(--white);
 }
 
 .main-content { 
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.section {
+    min-height: 100vh;
 }
