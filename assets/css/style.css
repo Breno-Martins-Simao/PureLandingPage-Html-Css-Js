@@ -1,7 +1,10 @@
 /*Css Variables*/
 :root {
+    /*Page Colors*/
     --primary-color: #0A1128;
-    --white: #ffffff;
+    --white-color: #ffffff;
+    --light-gray-color: #eeeeee;
+    --secondary-color: crimson;
     --gap: 3rem;
 }
 
@@ -26,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Fonts H1,2,3,4,5 and 6 fonts resizing*/
+/*Fonts a,H1,2,3,4,5 and 6 fonts resizing*/
 h1 { 
     font-size: 6rem;
     text-transform: uppercase;
@@ -52,20 +55,24 @@ h6 {
     font-size: 3.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Backgrounds*/
 .main-background {
     background-image: url(../img/main-background.svg);
     background-size: cover;
     background-position: center center;
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .white-background {
-    background: var(--white);
+    background: var(--white-color);
 }
 
 .main-content { 
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -73,3 +80,63 @@ h6 {
 .section {
     min-height: 100vh;
 }
+
+/*Menu and related itens formating*/
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*Menu buttons formating*/
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+/*Menu buttons animation*/
+.menu ul li a::after{
+   content: '';
+   position: absolute;
+   bottom: 1rem;
+   left: 50%;
+   width: 0;
+   height: 0.2rem;
+   background: var(--secondary-color);
+   transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+/*Menu logo formating*/
+.menu h1 { 
+    font-size: 2.3rem;    
+    color: var(--primary-color);
+}
+
+.menu h1 a { 
+    color: inherit;
+}
+
