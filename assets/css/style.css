@@ -228,3 +228,19 @@ p {
     left: -1rem;
     transform: rotate(5deg);
 }
+
+/*Galery Image*/
+.gallery-image { 
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    transition: all 300ms ease-in;
+}
+
+.gallery-image img:hover {
+    transform: translate(-3%, -3%) scale(1.2);
+}
