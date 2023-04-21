@@ -83,7 +83,7 @@ p {
 .main-content { 
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -162,7 +162,7 @@ p {
     grid-template-columns: 2fr 3fr;
     gap: var(--gap);
     align-items: stretch;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img-content { 
@@ -184,16 +184,16 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 64rem;
 }
 
 /*Top 3 content Formating*/
 .grid-one-content{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading { 
