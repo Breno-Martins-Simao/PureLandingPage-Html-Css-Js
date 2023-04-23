@@ -83,7 +83,7 @@ p {
 .main-content { 
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -155,17 +155,16 @@ p {
 }
 
 /*Introduction Section Formating*/
-.intro-content {
+.text-image-content {
     position: relative;
-    top: -8rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: var(--gap);
     align-items: stretch;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.intro-text-content, .intro-img-content { 
+.text-content, .image-content { 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -173,7 +172,7 @@ p {
 
 
 
-.intro-img-content img{ 
+.image-content img{ 
     max-width: 100%;
     height: auto;
 }
@@ -184,16 +183,16 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 64rem;
 }
 
 /*Top 3 content Formating*/
-.grid-one-content{
+.grid-one-content, .grid-two-content{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading { 
@@ -227,4 +226,20 @@ p {
     top: -3rem;
     left: -1rem;
     transform: rotate(5deg);
+}
+
+/*Galery Image*/
+.gallery-image { 
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    transition: all 300ms ease-in;
+}
+
+.gallery-image img:hover {
+    transform: translate(-3%, -3%) scale(1.2);
 }
