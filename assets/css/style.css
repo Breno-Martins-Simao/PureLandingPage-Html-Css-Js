@@ -155,9 +155,8 @@ p {
 }
 
 /*Introduction Section Formating*/
-.intro-content {
+.text-image-content {
     position: relative;
-    top: -8rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: var(--gap);
@@ -165,7 +164,7 @@ p {
     min-height: 100vh;
 }
 
-.intro-text-content, .intro-img-content { 
+.text-content, .image-content { 
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -173,7 +172,7 @@ p {
 
 
 
-.intro-img-content img{ 
+.image-content img{ 
     max-width: 100%;
     height: auto;
 }
@@ -189,7 +188,7 @@ p {
 }
 
 /*Top 3 content Formating*/
-.grid-one-content{
+.grid-one-content, .grid-two-content{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
