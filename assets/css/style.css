@@ -176,6 +176,7 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-content: center;
 }
 
 
@@ -332,6 +333,42 @@ p {
     color: var(--secondary-color);
 }
 
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {    
+    .text-image-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-content img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .gallery-image { 
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-image img{
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content {        
+        height: 100vh;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 
 
