@@ -338,7 +338,7 @@ p {
 }
 
 
-/*MEDIA QUERIES*/
+/*MEDIA QUERY FOR Responsivines*/
 @media (max-width: 800px) {  
     /*Sections contents rules*/  
     .menu ul li a {
