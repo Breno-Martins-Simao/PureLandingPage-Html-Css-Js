@@ -140,8 +140,8 @@
                 </div>
             </div>      
             <div class="navigate-buttons">
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>  
+                <a class="prev" onclick="prevImage()"">&#10094;</a>
+                <a class="next" onclick="nextImage()"">&#10095;</a>  
             </div>                
         </div>        
     </section>
@@ -231,4 +231,41 @@
         </p>
     </footer>
 </body>
+
+<!--Function for change images on  mobile carroussel-->
+<script>
+    function  prevImage(){
+        var images = document.getElementsByClassName("gallery-image")
+        var imgDisplayed = document.getElementsByClassName("displayed")[0]
+        for(var i = 0; i < images.length; i++){
+            if(images[i] == imgDisplayed){
+                if(i == 0){
+                    images[images.length-1].classList.add("displayed");
+                }else{
+                    images[i-1].classList.add("displayed");
+                }                   
+                
+                return imgDisplayed.classList.remove("displayed")
+            }
+        }
+    }
+
+    function  nextImage(){
+        var images = document.getElementsByClassName("gallery-image")
+        var imgDisplayed = document.getElementsByClassName("displayed")[0]
+        for(var i = 0; i < images.length; i++){
+            console.log()
+            if(images[i] == imgDisplayed){
+                if(i == images.length-1){
+                    images[0].classList.add("displayed");
+                }else{
+                    images[i+1].classList.add("displayed");
+                }                   
+                
+                return imgDisplayed.classList.remove("displayed")
+            }
+        }
+
+    }
+</script>
 </html>

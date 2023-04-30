@@ -71,7 +71,7 @@ p {
 }
 /*Backgrounds*/
 .main-background {
-    background-image: url(../img/main-background.svg);
+    background-image: url(../img/main-background-2.svg);
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -344,21 +344,30 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--gap);
+    gap: 10rem;
     padding: 2.5rem;
+    padding-bottom: 0;
 }
 
 .navigate-buttons a {
     font-size: 5rem;
+    display: none;
 }
 
 .navigate-buttons a:hover {
     cursor: pointer;
 }
 
+
+
 /*MEDIA QUERY FOR Responsivines*/
 @media (max-width: 800px) {  
     /*Carrousel Session*/
+    .navigate-buttons a {
+        display: flex;
+    }
+    
+
     .slide-show > :not(.displayed) {
         display: none;
         border: solid 1px red;
